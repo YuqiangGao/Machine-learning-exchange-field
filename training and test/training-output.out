@@ -1,0 +1,232 @@
+libAtoms::Hello World: 26/07/2023   10:04:33
+libAtoms::Hello World: git version  https://github.com/libAtoms/QUIP.git,609ca46c4-dirty
+libAtoms::Hello World: QUIP_ARCH    linux_x86_64_gfortran
+libAtoms::Hello World: compiled on  Jul 23 2023 at 20:30:28
+libAtoms::Hello World: Random Seed = 36273827
+libAtoms::Hello World: global verbosity = 0
+
+Calls to system_timer will do nothing by default
+
+
+================================ Input parameters ==============================
+
+atoms_filename = gap_sample3.xyz
+at_file = //MANDATORY//
+gap = "sosd_ex l_max=6 n_max=12 atom_sigma=0.5 spin_sigma=1.5 cutoff=7.0 radial_scaling=-0.5 cutoff_transition_width=1.0 central_weight=1.0 n_sparse=150 delta=1 f0=0.0 covariance_type=dot_product zeta=4 sparse_method=cur_points"
+e0 = 0.0
+local_property0 = 0.0
+e0_offset = 0.0
+e0_method = isolated
+default_kernel_regularisation = //MANDATORY//
+default_sigma = "0.001 0.1 0.2 0.2"
+default_kernel_regularisation_local_property = 0.001
+default_local_property_sigma = 0.001
+sparse_jitter = 1.0e-8
+hessian_displacement = 1.0e-2
+hessian_delta = 1.0e-2
+baseline_param_filename = quip_params.xml
+core_param_file = quip_params.xml
+baseline_ip_args =
+core_ip_args =
+energy_parameter_name = energy
+local_property_parameter_name = local_property
+force_parameter_name = forces
+virial_parameter_name = virial
+stress_parameter_name = stress
+hessian_parameter_name = hessian
+config_type_parameter_name = config_type
+kernel_regularisation_parameter_name = sigma
+sigma_parameter_name = sigma
+force_mask_parameter_name = force_mask
+parameter_name_prefix =
+config_type_kernel_regularisation =
+config_type_sigma = isolated_atom:0.0001:0.01:1.0:1.0:bcc:0.002:0.2:0.5:0.5:rss_005:0.02:0.3:0.4:0.2:rss_200:0.01:0.2:0.2:0.1:rss_3c:0.005:0.1:0.1:0.05:cryst_dist:0.0003:0.03:0.05:0.05:cryst_dist_hp:0.005:0.1:0.1:0.1:liq_P4:0.003:0.3:0.5:0.5:liq_network:0.003:0.3:0.5:0.5:2D:0.001:0.03:0.05:0.05:ribbons:0.01:0.5:0.2:0.2
+kernel_regularisation_is_per_atom = T
+sigma_per_atom = T
+do_copy_atoms_file = T
+do_copy_at_file = F
+sparse_separate_file = T
+sparse_use_actual_gpcov = F
+gap_file = gap_new.xml
+gp_file = P_GAP_28.xml
+verbosity = NORMAL
+rnd_seed = -1
+openmp_chunk_size = 1
+do_ip_timing = F
+template_file = template.xyz
+sparsify_only_no_fit = F
+
+========================================  ======================================
+
+
+============== Gaussian Approximation Potentials - Database fitting ============
+
+
+Initial parsing of command line arguments finished.
+Found 1 GAPs.
+Descriptors have been parsed
+label 1
+2693
+2777
+2792
+2817
+2831
+label 2
+XYZ file read
+Old GAP: {sosd_ex l_max=6 n_max=12 atom_sigma=0.5 spin_sigma=1.5 cutoff=7.0 radial_scaling=-0.5 cutoff_transition_width=1.0 central_weight=1.0 n_sparse=150 delta=1 f0=0.0 covariance_type=dot_product zeta=4 sparse_method=cur_points}
+New GAP: {sosd_ex l_max=6 n_max=12 atom_sigma=0.5 spin_sigma=1.5 cutoff=7.0 radial_scaling=-0.5 cutoff_transition_width=1.0 central_weight=1.0 n_sparse=150 delta=1 f0=0.0 covariance_type=dot_product zeta=4 sparse_method=cur_points n_species=1 Z=26 species_Z={26 }}
+Sparse points and target errors per pre-defined types of configurations
+isolated_atom    0.10000000000000000E-003  0.10000000000000000E-001  0.10000000000000000E+001  0.10000000000000000E+001
+bcc    0.20000000000000000E-002  0.20000000000000001E+000  0.50000000000000000E+000  0.50000000000000000E+000
+rss_005    0.20000000000000000E-001  0.29999999999999999E+000  0.40000000000000002E+000  0.20000000000000001E+000
+rss_200    0.10000000000000000E-001  0.20000000000000001E+000  0.20000000000000001E+000  0.10000000000000001E+000
+rss_3c    0.50000000000000001E-002  0.10000000000000001E+000  0.10000000000000001E+000  0.50000000000000003E-001
+cryst_dist    0.29999999999999997E-003  0.29999999999999999E-001  0.50000000000000003E-001  0.50000000000000003E-001
+cryst_dist_hp    0.50000000000000001E-002  0.10000000000000001E+000  0.10000000000000001E+000  0.10000000000000001E+000
+liq_P4    0.30000000000000001E-002  0.29999999999999999E+000  0.50000000000000000E+000  0.50000000000000000E+000
+liq_network    0.30000000000000001E-002  0.29999999999999999E+000  0.50000000000000000E+000  0.50000000000000000E+000
+2D    0.10000000000000000E-002  0.29999999999999999E-001  0.50000000000000003E-001  0.50000000000000003E-001
+ribbons    0.10000000000000000E-001  0.50000000000000000E+000  0.20000000000000001E+000  0.20000000000000001E+000
+default    0.10000000000000000E-002  0.10000000000000001E+000  0.20000000000000001E+000  0.20000000000000001E+000
+2693
+2777
+2792
+2817
+2831
+Multispecies support added where requested
+
+===================== Report on number of descriptors found ====================
+
+---------------------------------------------------------------------
+Descriptor: sosd_ex l_max=6 n_max=12 atom_sigma=0.5 spin_sigma=1.5 cutoff=7.0 radial_scaling=-0.5 cutoff_transition_width=1.0 central_weight=1.0 n_sparse=150 delta=1 f0=0.0 covariance_type=dot_product zeta=4 sparse_method=cur_points n_species=1 Z=26 species_Z={26 }
+Number of descriptors:                        593
+Number of partial derivatives of descriptors: 164400
+
+========================================  ======================================
+
+E0/atom =   0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000  0.00000000000000000E+000
+
+========== Report on number of target properties found in training XYZ: ========
+
+Number of target energies (property name: energy) found: 38
+Number of target local_properties (property name: local_property) found: 0
+Number of target forces (property name: forces) found: 1200
+Number of target virials (property name: virial) found: 0
+Number of target Hessian eigenvalues (property name: hessian) found: 0
+
+================================= End of report ================================
+
+
+===== Report on per-configuration/per-atom sigma (error parameter) settings ====
+
+Number of per-configuration setting of energy_sigma found:     0
+Number of per-configuration setting of force_sigma found:      0
+Number of per-configuration setting of virial_sigma found:     0
+Number of per-configuration setting of hessian_sigma found:    0
+Number of per-configuration setting of local_propery_sigma found:0
+Number of per-atom setting of force_atom_sigma found:          0
+Number of per-component setting of force_component_sigma found:          0
+
+================================= End of report ================================
+
+Started CUR decomposition
+====867====593======168
+====875====
+====878====
+====896====
+====899====
+====902====
+====905====
+====910====
+cur_decomposition: iteration: 1, error: .00000000000000000E+000
+Finished CUR decomposition
+Cartesian coordinates transformed to descriptors
+Started sparse covariance matrix calculation of coordinate 1
+Covariance matrix  67% |*************       |   2.5 /   3.7 s
+Finished sparse covariance matrix calculation of coordinate 1
+TIMER: gpFull_covarianceMatrix_sparse_Coordinate1_sparse  done in 3.7062470000000003 cpu secs, 3.7066673859953880 wall clock secs.
+TIMER: gpFull_covarianceMatrix_sparse_Coordinate1         done in 3.7062689999999998 cpu secs, 3.7066898439079523 wall clock secs.
+TIMER: gpFull_covarianceMatrix_sparse_LinearAlgebra       done in .21041000000000309E-001 cpu secs, .21042646840214729E-001 wall clock secs.
+TIMER: gpFull_covarianceMatrix_sparse_FunctionValues      done in .39999999996709334E-005 cpu secs, .44330954551696777E-005 wall clock secs.
+TIMER: gpFull_covarianceMatrix_sparse                     done in 3.7278099999999998 cpu secs, 3.7282278500497341 wall clock secs.
+start initialize=========
+==this is from%y(i_y).00000000000000000E+000
+==this is lambda.99999999999999995E-006
+==this is from%y(i_y).46594999999999998
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).34276000000000001
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).44222000000000000
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).48127999999999999
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).54298999999999997
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).58440999999999999
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).56971000000000005
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).34610999999999997
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).34769000000000000
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).40111999999999998
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).46251999999999999
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).32235000000000003
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).43612000000000001
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).58275999999999994
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).37567000000000000
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).59858999999999996
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).69077999999999995
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).60538000000000003
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).83409000000000000
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).51429999999999998
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).69223000000000001
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).38503999999999999
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).35586000000000001
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).49309999999999998
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).41254000000000002
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).26673000000000002
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).46675000000000000
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).39927000000000001
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).47139999999999999
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).44197999999999998
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).24656000000000000
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).30402000000000001
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).48114000000000001
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).29322999999999999
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).70416999999999996
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).65798000000000001
+==this is lambda.15999999999999999E-004
+==this is from%y(i_y).65039999999999998
+==this is lambda.15999999999999999E-004
+TIMER: GP sparsify                                        done in 3.7712879999999998 cpu secs, 3.8149054944515228 wall clock secs.
+
+libAtoms::Finalise: 26/07/2023   10:04:41
+libAtoms::Finalise: Bye-Bye!
