@@ -1,0 +1,35 @@
+# HQ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+# HQ X
+# HQ X   quippy: Python interface to QUIP atomistic simulation library
+# HQ X
+# HQ X   Portions of this code were written by
+# HQ X     Tamas K. Stenczel, James Kermode
+# HQ X
+# HQ X   Copyright 2019
+# HQ X
+# HQ X   These portions of the source code are released under the GNU General
+# HQ X   Public License, version 2, http://www.gnu.org/copyleft/gpl.html
+# HQ X
+# HQ X   If you would like to license the source code under different terms,
+# HQ X   please contact James Kermode, james.kermode@gmail.com
+# HQ X
+# HQ X   When using this software, please cite the following reference:
+# HQ X
+# HQ X   https://warwick.ac.uk/fac/sci/eng/staff/jrk
+# HQ X
+# HQ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+The aim of quippy is to make all the functions, subroutines and types
+defined in QUIP available from Python scripts. 
+
+Quick-start:
+ $ export QUIP_ARCH=linux_x86_64_gfortran
+ $ cd ${QUIP_ROOT}
+ $ make quippy
+ $ make install-quippy
+
+For more details, see documentation in doc/ subdirectory, which is in
+reStructredText format.
+
+The documentation is available online at http://libatoms.github.io/QUIP/
+
