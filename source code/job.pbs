@@ -1,0 +1,12 @@
+#Torque script options, you can modify.
+#PBS -S /bin/bash
+#PBS -N Fe2Ti
+#PBS -l nodes=1:ppn=32
+#PBS -V
+
+
+#Program run command, don't need to modify.
+export QUIP_ROOT=$(pwd)
+export QUIP_ARCH=linux_x86_64_gfortran
+make config
+make
