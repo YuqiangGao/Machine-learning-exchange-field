@@ -1,0 +1,1 @@
+The machine learning model for noncollinear spin is implemented in QUIP software. A new descriptor is added in QUIP. The main program has been modified to read and output the noncollinear spin structures.
