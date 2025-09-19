@@ -1,0 +1,63 @@
+#!/usr/bin/env bash
+# H0 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+# H0 X
+# H0 X   libAtoms+QUIP: atomistic simulation library
+# H0 X
+# H0 X   Portions of this code were written by
+# H0 X     Albert Bartok-Partay, Silvia Cereda, Gabor Csanyi, James Kermode,
+# H0 X     Ivan Solt, Wojciech Szlachta, Csilla Varnai, Steven Winfield.
+# H0 X
+# H0 X   Copyright 2006-2010.
+# H0 X
+# H0 X   These portions of the source code are released under the GNU General
+# H0 X   Public License, version 2, http://www.gnu.org/copyleft/gpl.html
+# H0 X
+# H0 X   If you would like to license the source code under different terms,
+# H0 X   please contact Gabor Csanyi, gabor@csanyi.net
+# H0 X
+# H0 X   Portions of this code were written by Noam Bernstein as part of
+# H0 X   his employment for the U.S. Government, and are not subject
+# H0 X   to copyright in the USA.
+# H0 X
+# H0 X
+# H0 X   When using this software, please cite the following reference:
+# H0 X
+# H0 X   http://www.libatoms.org
+# H0 X
+# H0 X  Additional contributions by
+# H0 X    Alessio Comisso, Chiara Gattinoni, and Gianpietro Moras
+# H0 X
+# H0 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+usage="make copies of module files defined in a source file
+Usage: $0 [ -lc | -uc ] [ -suffix suffix ] -- filename [ filename2 ... ]"
+
+mydir=`dirname $0`
+
+if [[ $# -lt 1 ]]; then
+  echo "$usage" 1>&2
+  exit 1
+fi
+
+args=""
+while [[ $# -gt 0 && $1 != "--" ]]; do
+  args="$args $1"
+  shift
+done
+
+# echo "args $args" 1>&2
+
+if [[ $1 != "--" ]]; then
+  echo "$usage" 1>&2
+  exit 1
+fi
+shift
+
+for file in $*; do
+  modules=`egrep -i '^[ 	]*module[ 	]+[^ 	]+[ 	]*$!?' $file | awk '{print $2}'`
+  for mod in `echo $modules | $mydir/module_name $args`; do
+    if [ -f $mod ]; then
+      mv $mod $mod.save
+    fi
+  done
+done

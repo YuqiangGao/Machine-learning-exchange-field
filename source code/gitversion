@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+# gitversion wrapper script which first checks for file ${QUIP_ROOT}/STABLE_VERSION  
+
+usage="Usage: $0 [ --hash-only ]"
+
+if [[ $# -gt 1 ]]; then
+    echo $usage 1>&2
+    exit 1
+fi
+if [[ $# == 1 ]]; then
+    if [[ $1 == "--hash-only" ]]; then
+        hashonly=1
+    else
+        echo $usage 1>&2
+        exit 1
+    fi
+fi
+
+QUIP_ROOT=$(dirname $0)/..
+
+if [ -s "${QUIP_ROOT}/GIT_VERSION" ]; then
+   echo -ne $(cat ${QUIP_ROOT}/GIT_VERSION)
+   exit 0
+elif [ -d ${QUIP_ROOT}/.git ] || [ -s ${QUIP_ROOT}/.git ]; then
+   cd ${QUIP_ROOT}
+   if [ ! -z $hashonly ]; then
+       echo "$(git describe --always --tags --dirty)"
+   else
+       echo "$(git config --get remote.origin.url),$(git describe --always --tags --dirty)"
+   fi
+else
+   echo "NONE"
+   exit 0
+fi
