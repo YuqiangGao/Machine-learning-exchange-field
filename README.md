@@ -5,5 +5,6 @@ To run the program, the "descriptor for noncollinear spin.f95" should be incorpo
 An example of the input and output files are included in the "training and test" folder.  The results for bcc Fe are shown below.
 
 
-![300-1000K (1)_page-0001](https://github.com/YuqiangGao/Machine-learning-ab-initio-spin-dynamics/assets/25586920/04ac578a-107d-4370-857f-8e28750038e3)
+<img width="659" height="833" alt="image" src="https://github.com/user-attachments/assets/c3757412-c921-43e5-af69-0e9840db0e1b" />
+
 
