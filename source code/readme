@@ -1,1 +1,2 @@
-The machine learning model for noncollinear spin is implemented in QUIP software. A new descriptor is added in QUIP. The main program has been modified to read and output the noncollinear spin structures.
+QUIP is a machine learning molecular dynamics code based on GAP-SOAP. We implemented our machine learning model for noncollinear spin in the QUIP software. 
+By copy the src folder into QUIP source code, it can read noncollinear spin configurations and train the machine learning model for the exchange field between spins.
