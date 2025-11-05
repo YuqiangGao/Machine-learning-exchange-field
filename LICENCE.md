@@ -90,7 +90,7 @@ You should have received a copy of the ASL along with this program; if not, writ
 
 You may contact the original licensor at [y.gao@ahnu.edu.cn].
 
-"Licenses and authorship for the other components of this software can be found here:
-https://github.com/YuqiangGao/Machine-learning-exchange-field/sourcecode/src/GAP/LICENSE.md
-https://github.com/YuqiangGao/Machine-learning-exchange-field/sourcecode/src/libAtoms/COPYRIGHT
-https://github.com/YuqiangGao/Machine-learning-exchange-field/sourcecode/src/Potentials/README"
+Licenses and authorship for the other components of this software can be found here:
+"https://github.com/YuqiangGao/Machine-learning-exchange-field/sourcecode/src/GAP/LICENSE.md
+ https://github.com/YuqiangGao/Machine-learning-exchange-field/sourcecode/src/libAtoms/COPYRIGHT
+ https://github.com/YuqiangGao/Machine-learning-exchange-field/sourcecode/src/Potentials/README"
